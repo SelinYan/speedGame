@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right top, rgb(28, 24, 24), rgb(106, 28, 28)) ;
+    background-attachment: fixed;
+}
+
+.circles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    pointer-events: none;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.circle.active {
+background-color: tomato;
+    /*background-image: url('');*/
+}
