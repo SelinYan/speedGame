@@ -1,5 +1,5 @@
-const startButton = document.querySelector("#startGame");
-const endButton = document.querySelector("#endGame");
+const startButton = document.querySelector("#startButton");
+const endButton = document.querySelector("#endButton");
 const circles = document.querySelectorAll(".circle");
 const scoreDisplay = document.querySelector(".score");
 
@@ -28,13 +28,16 @@ circles.forEach((circle, i) => {
 
 const enableEvents = () => {
   circles.forEach((circle) => {
-    circle.computedStyleMap.pointerEvent = "auto";
+    circle.style.pointerEvent = "auto";
   });
 };
 const startGame = () => {
   if (rounds >= 3) {
     return endGame();
   }
+
+  let startGameSound = new Audio("");
+  mySound.play();
 
   enableEvents();
   const newActive = pickNew(active);
@@ -58,6 +61,7 @@ const startGame = () => {
 };
 
 const endGame = () => {
+  console.log("game ended");
   clearTimeout(timer);
   resetGame();
 };
