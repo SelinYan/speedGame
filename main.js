@@ -1,6 +1,5 @@
 const startButton = document.querySelector("#startButton");
 const endButton = document.querySelector("#endButton");
-const restartButton = document.querySelector("#restartButton");
 const circles = document.querySelectorAll(".circle");
 const scoreDisplay = document.querySelector(".score");
 const modal = document.querySelector(".modal");
@@ -60,7 +59,6 @@ const enableEvents = () => {
 // game starts
 function startGame() {
   startButton.classList.add("none");
-  restartButton.classList.add("none");
   endButton.classList.remove("none");
   gameMusic.play();
   enableEvents();
@@ -101,8 +99,6 @@ function endGame() {
   }
   startButton.classList.add("none");
   endButton.classList.add("none");
-  restartButton.classList.remove("none");
-  restartButton.addEventListener("click", resetGame);
 }
 
 function resetGame() {
