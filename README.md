@@ -39,3 +39,32 @@ https://selinyan.github.io/speedGame/
    cd speedGame
    ```
 2. Navigate to index.html file, Go Live
+
+## Usage
+
+- Click on the Start game button to begin.
+- Click on the circles that appear to increase your score.
+- Click on the End game button to stop the game and view your score.
+
+## Project Structure
+
+speedGame/
+
+- index.html
+- style.css
+- main.js
+- README.md
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature-branch).
+3. Commit your changes (git commit -am 'Add new feature').
+4. Push to the branch (git push origin feature-branch).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
